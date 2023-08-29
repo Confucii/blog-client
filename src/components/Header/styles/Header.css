@@ -1,4 +1,4 @@
-.header {
+.Header {
   display: flex;
   padding: 15px;
   justify-content: center;
@@ -6,4 +6,9 @@
 
 .logo-img {
   height: 125px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: rotate(90deg);
 }

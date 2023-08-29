@@ -1,0 +1,27 @@
+.PostPreview {
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.PostPreview:hover {
+  transform: scale(1.025);
+}
+
+.color-holder {
+  border-radius: 10px 10px 0px 0px;
+  height: 100px;
+}
+
+.post-preview-data {
+  border-radius: 0px 0px 10px 10px;
+  padding: 15px;
+  background-color: white;
+}
+
+.post-preview-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,11 +1,14 @@
 import "./styles/Header.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="Header">
       <div className="img-container">
-        <img className="logo-img" src="/logo.svg" alt="logo" />
+        <Link to="/">
+          <img className="logo-img" src="/logo.svg" alt="logo" />
+        </Link>
       </div>
     </header>
   );
