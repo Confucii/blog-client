@@ -1,12 +1,29 @@
 import "./styles/Home.css";
-import React from "react";
+import Header from "./Header/Header";
+import React, { useEffect, useState } from "react";
 
-function App() {
+function Home() {
+  const [allPosts, setAllPosts] = useState([]);
+
+  useEffect(() => {
+    async function fetchPostData() {
+      const posts = await fetch("http://localhost:3000/posts", {
+        mode: "cors",
+      });
+      const res = await posts.json();
+
+      setAllPosts(res);
+    }
+    fetchPostData();
+  }, []);
+
+  console.log(allPosts);
+
   return (
-    <>
-      <div>Hello</div>
-    </>
+    <div className="main">
+      <Header />
+    </div>
   );
 }
 
-export default App;
+export default Home;

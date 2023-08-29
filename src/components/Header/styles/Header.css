@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 125px;
+}
