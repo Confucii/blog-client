@@ -4,6 +4,8 @@ export interface PostPreviewInterface {
   timestamp: Date;
   posted: boolean;
   date: string;
+  colors: number[];
+  deg: number;
 }
 
 export interface PostData extends PostPreviewInterface {
