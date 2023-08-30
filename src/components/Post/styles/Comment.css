@@ -1,0 +1,25 @@
+.Comment {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Comment + .Comment {
+  padding-top: 5px;
+  border-top: 1px solid gray;
+}
+
+.comment-header {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .comment-dot {
+    display: none;
+  }
+
+  .comment-header {
+    display: block;
+  }
+}

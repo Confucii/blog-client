@@ -8,6 +8,7 @@
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .post-color-holder {
@@ -19,11 +20,18 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5px;
 }
 
 .post-title {
   text-align: center;
+  width: 80%;
+}
+
+.post-date,
+.post-text {
+  width: 80%;
 }
 
 .graytext {
@@ -33,6 +41,12 @@
 @media screen and (min-width: 320px) {
   .Post {
     padding: 15px 10%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .post-title {
+    width: 100%;
   }
 }
 

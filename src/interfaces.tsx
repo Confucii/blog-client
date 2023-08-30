@@ -12,7 +12,7 @@ export interface PostData extends PostPreviewInterface {
   text: string;
 }
 
-export interface Comment {
+export interface CommentInterface {
   _id: string;
   text: string;
   author: string;
@@ -22,5 +22,5 @@ export interface Comment {
 
 export interface PostWithComments {
   post: PostData;
-  comments: Comment[];
+  comments: CommentInterface[];
 }

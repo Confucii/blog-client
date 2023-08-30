@@ -1,6 +1,5 @@
 .CommentForm {
-  width: 80%;
-  align-self: center;
+  width: 100%;
 }
 
 .CommentForm form {
@@ -58,10 +57,4 @@ input {
   box-shadow: none;
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-@media screen and (max-width: 500px) {
-  .CommentForm {
-    width: 100%;
-  }
 }

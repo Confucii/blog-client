@@ -1,13 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import "./styles/Post.css";
-import React, { useEffect } from "react";
+import React from "react";
 import { PostWithComments } from "../../interfaces";
-import CommentForm from "./CommentForm";
+import Comments from "./Comments";
 
 function Post() {
   const { post, comments } = useLoaderData() as PostWithComments;
-
-  console.log(comments);
 
   return (
     <div className="Post">
@@ -24,7 +22,7 @@ function Post() {
           <p className="post-text">{post.text}</p>
         </div>
       </div>
-      <CommentForm postid={post._id} />
+      <Comments comments={comments} postid={post._id} />
     </div>
   );
 }
