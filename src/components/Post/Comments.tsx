@@ -18,7 +18,7 @@ function Comments({
       <div className="comments-container">
         {comments.length > 0 ? (
           comments.map((comment) => {
-            return <Comment comment={comment} />;
+            return <Comment key={comment._id} comment={comment} />;
           })
         ) : (
           <div className="error-message">
