@@ -14,6 +14,7 @@ function Comments({
   return (
     <div className="Comments">
       <CommentForm postid={postid} />
+      <hr />
       <h2 className="comments-header">Comments</h2>
       <div className="comments-container">
         {comments.length > 0 ? (
