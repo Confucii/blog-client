@@ -14,9 +14,11 @@ function Home() {
         <h3>it is not empty, it is minimalistic {":)"}</h3>
       </div>
       <div className="posts-container">
-        {allPosts.map((post) => {
-          return <PostPreview key={post._id} post={post} />;
-        })}
+        {allPosts.length > 0
+          ? allPosts.map((post) => {
+              return post.posted && <PostPreview key={post._id} post={post} />;
+            })
+          : "There are no posts yet"}
       </div>
     </div>
   );
