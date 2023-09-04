@@ -14,6 +14,13 @@
   gap: 5px;
 }
 
+.comment-name,
+.comment-date {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 500px) {
   .comment-dot {
     display: none;
