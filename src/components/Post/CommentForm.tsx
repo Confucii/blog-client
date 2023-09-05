@@ -23,14 +23,17 @@ function CommentForm({ postid }: { postid: string }) {
     e.preventDefault();
     setMessages({ text: "", success: "" });
     try {
-      const res = await fetch("http://localhost:3000/comments", {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(form),
-      });
+      const res = await fetch(
+        "https://blog-api-production-17b7.up.railway.app/comments",
+        {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(form),
+        }
+      );
 
       const resJson = await res.json();
 

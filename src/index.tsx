@@ -17,18 +17,24 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: async () => {
-          return fetch("http://localhost:3000/posts", {
-            mode: "cors",
-          });
+          return fetch(
+            "https://blog-api-production-17b7.up.railway.app/posts",
+            {
+              mode: "cors",
+            }
+          );
         },
       },
       {
         path: "post/:postid",
         element: <Post />,
         loader: async ({ params }) => {
-          return fetch(`http://localhost:3000/posts/${params.postid}`, {
-            mode: "cors",
-          });
+          return fetch(
+            `https://blog-api-production-17b7.up.railway.app/posts/${params.postid}`,
+            {
+              mode: "cors",
+            }
+          );
         },
       },
     ],
