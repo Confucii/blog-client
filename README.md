@@ -8,6 +8,8 @@ This project is a comprehensive blogging system consisting of three main parts: 
 
 ### [API](https://github.com/Confucii/blog-api)
 
+![Website layout image](https://raw.githubusercontent.com/Confucii/confucii/main/images/client.gif)
+
 ## Description
 
 The Blog Client is a Single Page Application (SPA) built using React.js. It acts as the user-facing interface, allowing users to interact with the blog's content. Key features of the client include:
